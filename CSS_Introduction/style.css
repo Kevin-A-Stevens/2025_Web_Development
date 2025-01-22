@@ -1,0 +1,35 @@
+/* CSS Selectors */
+
+/* Element Selector */
+
+h1 {
+    color: green;
+}
+
+/* Class Selector */
+
+.red-text {
+    color: red;
+}
+
+/* Id Selector - must be unique to one element per file */
+
+#blue-text {
+    color: blue;
+}
+
+/* Attribute Selector */
+
+p[draggable] {
+    color: orange;
+}
+
+p[draggable="false"] {
+    color: pink;
+}
+
+/* Universal Selector */
+
+* {
+   color: orangered;                                           
+}
