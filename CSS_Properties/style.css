@@ -1,0 +1,49 @@
+/* Background property */
+
+html {
+    background-color: orange;
+    font-size: 50px;
+}
+
+body {
+    font-size: 40px;
+}
+
+/* Font properties */
+/* 1px = 1/96 of an inch */
+/* font-weight can also use a number 100-900 */
+
+h1 {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+/*  Can also use pt for teh size */
+/* 1pt = 1/72 of an inch  */
+
+h2 {
+    color: green;
+    font-weight: 700;
+    font-size: 20pt;
+}
+
+/* Can also use em and rem to represent sizes */
+/* 1em = 100% of parent */
+/* RECOMMENDED: 1rem = 100% of root */
+
+h3 {
+    color: red;
+    font-weight: bold;
+    /* body font is 40px, so 1em = 40px */
+    font-size: 1em; 
+}
+
+h4 {
+    color: aqua;
+    font-weight: bold;
+    /* html is the root, so 1rem = 50px */
+    font-size: 1rem;
+}
