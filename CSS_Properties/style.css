@@ -47,3 +47,9 @@ h4 {
     /* html is the root, so 1rem = 50px */
     font-size: 1rem;
 }
+
+/* border: thickness, style, color */
+/* border-top: comes after the border property */
+/* border-width: */
+/* padding comes inside the border */
+/* margin is outside the border */
