@@ -47,3 +47,60 @@ div > p {
 h1#title.big.heading {
     color: aqua;
 }
+
+/* CSS Positioning */
+/* There are four different values for that property */
+/* Static, Relative. Absolute, Fixed */
+
+.container {
+    display: flex;
+}
+
+/* Static - HTML default */
+.static {
+    position: static;
+    height: 40px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
+
+/* Relative - You can move the item relative to where it should be */
+
+.relative {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
+
+/* Absolute - relative to nearest positioned ancestor ot top-left corner of the webpage */
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 40px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
+
+/* Fixed - position relative to top-left corner of browser window */
+
+.fixed {
+    position: fixed;
+    top: 75px;
+    left: 75px;
+    height: 40px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    margin: 20px;
+}
