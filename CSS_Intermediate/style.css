@@ -1,0 +1,49 @@
+/* Cascade */
+/* First the external style sheet */
+/* Second the Internal styles will be applied */
+/* Third the inline styles will take effect */
+
+/* THere are four kinds of items being looked at */
+/* Position, Specificity, Type, and Importance */
+
+/* Position: Is the item higher or lower in the styles than other rules */
+
+/* Specificity: How specific the CSS rule is */
+/* From least to most specific */
+/* Element, class, attribute, id */
+
+/* Type: There are three ways we can apply CSS */
+/* External, Internal, Inline */
+/* Inline will overwrite the others */
+
+/* Importance: Using the '!important' keyword */
+
+li {
+    color: green;
+    color: blue;
+}
+
+/* Combining CSS Selectors */
+/* Group = selector, selector */
+
+h1, h2 {
+    color: blueviolet;
+} 
+
+/* Child = parent > child */
+
+div > p {
+    color: firebrick;
+}
+
+/* Descendant = ancestor descendant */
+
+.box li {
+    color: orange;
+}
+
+/* Chaining = selectorselector */
+
+h1#title.big.heading {
+    color: aqua;
+}
