@@ -32,3 +32,12 @@ footer {
     clear: left;
 }
 
+/* Making a website responsive */
+/* There are four ways of doing this */
+/* Media Queries, CSS Grid, CSS Flexbox, External Frameworks (Bootstrap) */
+
+/* Media query */
+
+/* @media (max-width): 600px { */
+/* CSS for screens below or equak to 600px wide }*/
+
