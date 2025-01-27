@@ -38,6 +38,27 @@ footer {
 
 /* Media query */
 
-/* @media (max-width): 600px { */
-/* CSS for screens below or equak to 600px wide }*/
+/* @media (max-width: 600px) { */
+/* CSS for screens below or equal to 600px wide }*/
+
+.media {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+
+/* min-width targets larger screens and max-width targets smaller screens */
+
+@media(min-width:600px) and (max-width: 900px) {
+    .media {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* Mobile devices: 319px and 480px */
+/* Ipads and Tablets: 481px and 1200px */
+/* Laptops: 1201px and 1600px  */
+/* Desktops: 1601px and more */
+
 
