@@ -1,0 +1,21 @@
+/* Flexbox: All you need to do is wrap your divs inside a container */
+/* Then target that container and use display flex */
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+p {
+    max-width: 100px; /* respects flex-basis unless max-width is smaller */
+    width: 75px;
+    flex-basis: 200px; /* ignores width */
+}
+
+/* Flex layout */
+
+/* order */
+/* flexwrap */
+/* justify-content: parent */
+/* align-items */
+/* align-content: only works with flex-wrap */
