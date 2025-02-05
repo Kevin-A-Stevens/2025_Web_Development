@@ -39,6 +39,7 @@ h1 {
 h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    position: relative; /* For absolute position "TOP" below */
 }
 
 h3 {
@@ -106,6 +107,8 @@ li:last-child {
     margin-bottom: 40px;
 }
 
+/* Pseudo-classes : */
+
 li:first-child {
     font-weight: bold;
 }
@@ -139,6 +142,27 @@ a:active {
 .post-img {
     width: 100%;
     height: auto;
+}
+
+/* Pseudo-elements :: */
+
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;;
+}
+
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    /* Absolute positioning */
+    position: absolute;
+    top: -10px;
+    right: -25px;
 }
 
 /* CSS Box Model: Content / Border (Around element) / Padding (Inside element) / Margin (Outside element) */
