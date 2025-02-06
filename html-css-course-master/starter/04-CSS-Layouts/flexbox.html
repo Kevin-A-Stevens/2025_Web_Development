@@ -44,21 +44,48 @@
       /* STARTER */
       font-family: sans-serif;
       background-color: #ddd;
-      font-size: 34px;
+      font-size: 32px;
       margin: 40px;
 
       /* FLEXBOX */
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      /* gap: 30px; */
+    }
 
+    .el {
+      /* DEFAULTS:
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      flex: grow shrink basis is the shorthand property we should use
+      */
+
+      flex-basis: 100px;
+      /* Used to set the width on flex items */
+    }
+
+    .el--1 {
+      align-self: flex-start;
+      flex: 1;
+      /* Equivalent to flex-grow: 1 */
+    }
+
+    .el--5 {
+      align-self: stretch;
+      order: 1;
+    }
+
+    .el--6 {
+      order: -1;
     }
   </style>
 
   <!-- Flex Container -->
   <!-- gap: 0 | length  creates space between items -->
   <!-- justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  to align items along main axis horizontally by default -->
-  <!-- align-items: stretch | flex-start | flex-end | center | baseline  To align items along cross axis vertically by default -->
+  <!--  align-items: stretch | flex-start | flex-end | center | baseline  To align items along cross axis vertically by default -->
   <!-- flex-direction: row | row-reverse | column | column-reverse  To define which is the main axis -->
   <!-- flex-wrap: nowrap | wrap | wrap-reverse  To allow items to wrap into a new line if they are too large -->
   <!-- align-content: stretch | flex-start | flex-end | center | space-between | space-around  Only applies when there area multiple lines -->
